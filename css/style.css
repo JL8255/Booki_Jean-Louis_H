@@ -16,6 +16,7 @@
 }
 
 body {
+    margin-top:0;
     display: flex;
     justify-content: center;
 }
@@ -63,31 +64,40 @@ a {
 /****** en-tête *******************************/
 
 .en-tete {
+    height:4em;
+    width:100%;
+    margin-bottom:2em;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
 .en-tete img {
-    height: 1em;
-    padding-top: 15px;
+    height: 1.25em;
 }
 
 .en-tete ul {
+    margin-top: 0;
     display: flex;
-    width: 18%;
+    width: 19%;
     justify-content: space-between;
 }
 
 .en-tete ul :hover {
+    border-top: 6px solid blue;
+}
+
+.en-tete li :hover {
     color: blue;
-    border-top: 2px solid blue;
+    border:none;
 }
 
 .en-tete li {
     display: inline;
     padding: 24px 12px 6px 12px;
 }
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
