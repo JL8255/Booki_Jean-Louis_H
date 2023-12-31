@@ -60,6 +60,35 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** en-tête *******************************/
+
+.en-tete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.en-tete img {
+    height: 1em;
+    padding-top: 15px;
+}
+
+.en-tete ul {
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+}
+
+.en-tete ul :hover {
+    color: blue;
+    border-top: 2px solid blue;
+}
+
+.en-tete li {
+    display: inline;
+    padding: 24px 12px 6px 12px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
