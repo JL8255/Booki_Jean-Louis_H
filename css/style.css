@@ -143,14 +143,38 @@ a {
     border:none;
 }
 
+#filtre_cat {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:3em;
+}
+
 #filtre_cat img {
     width: 22px;
     height: 22px;
+}
+
+#filtre_cat_list {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+#filtre_cat_list label {
+    display:flex;
+    height: 50px;
+    width: 150px;
+    border:3px solid #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#filtre_cat_list label:hover {
+    background-color: #DEEBFF;
 }
 
 /****** Hebergements And Populaires ***********/
