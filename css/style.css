@@ -16,6 +16,7 @@
 }
 
 body {
+    margin-top:0;
     display: flex;
     justify-content: center;
 }
@@ -58,6 +59,42 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** en-tête *******************************/
+
+.en-tete {
+    height:5em;
+    width:100%;
+    margin-bottom:2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#en-tete_img {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.en-tete img {
+    height: 1.25em;
+}
+
+.en-tete li {
+    display: inline;
+    padding: 13px 12px 6px 12px;
+    border-top:3px solid rgb(0, 101, 252, 0);
+}
+
+.en-tete ul :hover {
+    border-top: 3px solid rgb(0, 101, 252, 1);
+}
+
+.en-tete li :hover {
+    color: rgb(0, 101, 252, 1);
+    border:none;
 }
 
 /****** Hebergements And Populaires ***********/
