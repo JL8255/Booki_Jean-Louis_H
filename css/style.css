@@ -99,7 +99,59 @@ a {
 
 /****** Filtres *******************************/
 
+#filtres {
 
+}
+
+#filtre_geoloc {
+    height: 80px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top:3em;
+}
+
+#picto1 {
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    padding:10px;
+    border-radius: 16px 0px 0px 16px;
+}
+
+#input_geoloc {
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    color:black;
+    padding-left: 2em;
+    border : 1px solid #F2F2F2;
+}
+
+#button_geoloc {
+    width: 125px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0px 16px 16px 0px;
+    border:none;
+}
+
+#filtre_cat img {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
