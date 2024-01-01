@@ -41,8 +41,8 @@
                 <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                 <p>En plien centre-ville ou en pleine nature</p>
                 <form id="filtre_geoloc" method="post" action="">
-                    <img id="picto1" src="./images/filtres/map-marker-alt-solid.svg" alt="image de pointeur">
-                    <input id="input_geoloc" type="search" name="localisation" maxlength="32" placeholder="Marseille, France">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input id="input_geoloc" type="search" name="localisation" placeholder="Marseille, France">
                     <button id="button_geoloc" type="submit" name="submit">
                         <span>Rechercher</span>
                     </button>
@@ -51,35 +51,39 @@
                     <p>Filtres</p>
                     <ul id="filtre_cat_list">
                         <li>
-                            <input id="filtre_economique" type="checkbox" name="economique">
-                            <label for="filtre_economique">
-                                <img src="./images/filtres/money-bill-wave-solid.svg" alt="icône">
+                            <input id="economique" type="checkbox" name="economique">
+                            <label for="economique">
+                                <i class="fa-solid fa-money-bill-wave"></i>
                                 <span>Economique</span>
                             </label>
                         </li>
                         <li>
-                            <input id="filtre_familial" type="checkbox" name="familial">
-                            <label for="filtre_economique">
-                                <img src="./images/filtres/child-solid.svg" alt="icône">
+                            <input id="familial" type="checkbox" name="familial">
+                            <label for="familial">
+                                <i class="fa-solid fa-person"></i>
                                 <span>Familial</span>
                             </label>
                         </li>
                         <li>
-                            <input id="filtre_romantique" type="checkbox" name="romantique">
-                            <label for="filtre_economique">
-                                <img src="./images/filtres/heart-solid.svg" alt="icône">
+                            <input id="romantique" type="checkbox" name="romantique">
+                            <label for="romantique">
+                                <i class="fa-solid fa-heart"></i>
                                 <span>Romantique</span>
                             </label>
                         </li>
                         <li>
-                            <input id="filtre_nospepites" type="checkbox" name="nospepites">
-                            <label for="filtre_economique">
-                                <img src="./images/filtres/flame-solid.svg" alt="icône">
+                            <input id="nospepites" type="checkbox" name="nospepites">
+                            <label for="nospepites">
+                                <i class="fa-solid fa-fire"></i>
                                 <span>Nos pépites</span>
                             </label>
                         </li>
                     </ul>
                 </form>
+                <div id="filtre_footer">
+                    <i class="fa-solid fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
