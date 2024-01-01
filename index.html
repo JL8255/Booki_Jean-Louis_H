@@ -37,16 +37,48 @@
             </div>
         </header>
         <main>
-            <section>
+            <section id="filtres">
                 <h2>Trouver votre hébergement pour de vacances de rêve</h2>
                 <p>En plien centre-ville ou en pleine nature</p>
-                <form method="post" action="#">
-                    <img src="./images/filtres/placeholder.png" alt="image de pointeur">
-                    <input type="search" name="localisation" maxlength="32" placeholder="Marseille, France">
-                    <button type="submit" name="submit">
-                        <img src="./images/filtres/fond_bleu.png" alt="image de fond">
+                <form id="filtre_geoloc" method="post" action="">
+                    <img id="picto1" src="./images/filtres/map-marker-alt-solid.svg" alt="image de pointeur">
+                    <input id="input_geoloc" type="search" name="localisation" maxlength="32" placeholder="Marseille, France">
+                    <button id="button_geoloc" type="submit" name="submit">
                         <span>Rechercher</span>
                     </button>
+                </form>
+                <form id="filtre_cat" method="post" action="">
+                    <p>Filtres</p>
+                    <ul id="filtre_cat_list">
+                        <li>
+                            <input id="filtre_economique" type="checkbox" name="economique">
+                            <label for="filtre_economique">
+                                <span><img src="./images/filtres/money-bill-wave-solid.svg" alt="icône"></span>
+                                <span>Economique</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="filtre_familial" type="checkbox" name="familial">
+                            <label for="filtre_economique">
+                                <span><img src="./images/filtres/child-solid.svg" alt="icône"></span>
+                                <span>Familial</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="filtre_romantique" type="checkbox" name="romantique">
+                            <label for="filtre_economique">
+                                <span><img src="./images/filtres/heart-solid.svg" alt="icône"></span>
+                                <span>Romantique</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input id="filtre_nospepites" type="checkbox" name="nospepites">
+                            <label for="filtre_economique">
+                                <span><img src="./images/filtres/flame-solid.svg" alt="icône"></span>
+                                <span>Nos pépites</span>
+                            </label>
+                        </li>
+                    </ul>
                 </form>
             </section>
             <div class="hebergements-and-populaires">
