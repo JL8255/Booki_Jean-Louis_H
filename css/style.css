@@ -97,6 +97,127 @@ a {
     border:none;
 }
 
+/****** Filtres *******************************/
+
+#filtre_geoloc {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top:3em;
+}
+
+#filtre_geoloc i {
+    width: 50px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color:black;
+    background-color: #F2F2F2;
+    border-radius: 16px 0px 0px 16px;
+}
+
+#input_geoloc {
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    color:black;
+    padding-left: 2em;
+    border : 1px solid #F2F2F2;
+}
+
+#button_geoloc {
+    width: 125px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0px 16px 16px 0px;
+    border:none;
+}
+
+#filtre_cat {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:2em;
+}
+
+#filtre_cat img {
+    width: 22px;
+    height: 22px;
+    padding-right: 20px;
+}
+
+#filtre_cat_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/*masque et réduit l'espace des cases à cocher du formulaire "filtre"*/
+input[type="checkbox"] {
+    visibility: hidden;
+    display:none;
+}
+
+#filtre_cat_list li {
+    padding-right:15px;
+}
+
+#filtre_cat_list i {
+    font-size: x-large;
+    padding-right:15px;
+}
+
+#filtre_cat_list label {
+    display:flex;
+    height: 50px;
+    width: auto;
+    padding-left:20px;
+    padding-right:20px;
+    border:3px solid #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#filtre_cat_list label:hover {
+    background-color: #DEEBFF;
+}
+
+#filtre_cat_list label:checked {
+    background-color: #DEEBFF;
+}
+
+#filtre_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:2em;
+}
+
+#filtre_footer i {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border:1px solid #DEEBFF;
+    border-radius:12px 12px 12px 12px;
+    margin-right: 15px;
+    font-size: 1em;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -151,7 +272,6 @@ a {
     justify-content: space-between;
     box-sizing: border-box;
 }
-
 
 /****** Populaires ***********/
 .populaires {
