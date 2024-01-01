@@ -1,1 +1,1 @@
-Première implémentation de code, le contenu des article est mal calibré !
+Première implémentation de code, le contenu des articles est mal calibré !
