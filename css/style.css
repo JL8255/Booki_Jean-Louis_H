@@ -334,7 +334,8 @@ input[type="checkbox"] {
 /************ Activités *********************/
 
 .activite {
-    margin:15px;
+    margin-top:40px;
+    padding:15px;
 }
 
 .activite-title {
@@ -350,18 +351,20 @@ input[type="checkbox"] {
     flex-direction: column;
     align-content: space-around;
     background-color: white;
-    width: 19em;
-    height: 30em;
+    width: 300px;
+    height: 430px;
     border-radius: 20px;
-    margin:10px;
+    margin-top:33px;
+    margin-right: 33px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    object-fit: cover;
 }
 
 .activite-cards img {
-    height: 26em;
+    width: 100%;
+    height: 370px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .activite-cards h3 {
