@@ -9,6 +9,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --footer-bg-color: #F2F2F2;
 }
 
 .fa-solid {
@@ -369,6 +370,33 @@ input[type="checkbox"] {
 
 .activite-cards h3 {
     padding-left: 15px;
+}
+
+/****** Footer ****************************/
+
+.footer-conteneur {
+    background-color: var(--footer-bg-color);
+    width: 100%;
+    margin-top:3em;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.footer-bloc {
+    width: 30em;
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+
+.footer-tittle {
+    margin: 0px;
+}
+
+.footer-conteneur a:hover {
+    color: #0065FC;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
