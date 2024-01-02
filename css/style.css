@@ -285,6 +285,7 @@ input[type="checkbox"] {
     font-weight: bold;
 }
 
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -330,8 +331,45 @@ input[type="checkbox"] {
     margin-bottom: 5px;
 }
 
+/************ Activités *********************/
 
+.activite {
+    margin-top:40px;
+    padding:15px;
+}
 
+.activite-title {
+}
+
+.activite-conteneur {
+    display:flex;
+    flex-direction: row;
+}
+
+.activite-cards {
+    display:flex;
+    flex-direction: column;
+    align-content: space-around;
+    background-color: white;
+    width: 300px;
+    height: 430px;
+    border-radius: 20px;
+    margin-top:33px;
+    margin-right: 33px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activite-cards img {
+    width: 100%;
+    height: 370px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.activite-cards h3 {
+    padding-left: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
