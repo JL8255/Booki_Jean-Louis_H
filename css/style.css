@@ -294,6 +294,9 @@ input[type="checkbox"] {
     font-weight: bold;
 }
 
+#afficher_plus:hover {
+    color: #0065FC;
+}
 
 /****** Populaires ***********/
 
