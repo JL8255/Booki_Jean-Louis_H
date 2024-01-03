@@ -421,6 +421,15 @@ input[type="checkbox"] {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/* Large devices */
+
+@media (max-width: 1440px) {
+    body {
+        max-width: 1440px;
+    }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -458,4 +467,11 @@ input[type="checkbox"] {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+
+/* VerySmall devices (<320px) */
+@media (max-width: 319.98px) {
+    body {
+        min-width: 320px;
+    }
 }
