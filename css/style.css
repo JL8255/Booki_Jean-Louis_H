@@ -220,6 +220,7 @@ input[type="checkbox"] {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -232,8 +233,9 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
+/****** Hebergement ***********/
+
+.hebergement {
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -251,6 +253,11 @@ input[type="checkbox"] {
 
 .hebergement-conteneur a {
     margin-top: 33px;
+}
+
+.hebergement-conteneur a:hover {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+    transition: 0.2s;
 }
 
 .hebergement-cards {
@@ -286,8 +293,12 @@ input[type="checkbox"] {
     font-weight: bold;
 }
 
+#afficher_plus:hover {
+    color: #0065FC;
+}
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -332,6 +343,11 @@ input[type="checkbox"] {
     margin-bottom: 5px;
 }
 
+.populaires-cards a:hover {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+    transition: 0.2s;
+}
+
 /************ Activités *********************/
 
 .activite {
@@ -339,12 +355,15 @@ input[type="checkbox"] {
     padding:15px;
 }
 
-.activite-title {
-}
-
 .activite-conteneur {
     display:flex;
     flex-direction: row;
+}
+
+.activite-conteneur a:hover {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 
 .activite-cards {
