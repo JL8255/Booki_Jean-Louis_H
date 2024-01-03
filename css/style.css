@@ -233,9 +233,9 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hebergement ***********/
 
-.hebergements {
+.hebergement {
     width: 65%;
     display: flex;
     flex-direction: column;
