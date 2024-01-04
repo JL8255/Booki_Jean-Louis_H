@@ -65,9 +65,9 @@ a {
 /****** en-tête *******************************/
 
 .en-tete {
-    height:5em;
+    /*height:5em;*/
     width:100%;
-    margin-bottom:2em;
+    margin-bottom:50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,20 +77,37 @@ a {
     display:flex;
     align-items: center;
     justify-content: left;
+    margin-top: 20px;
 }
 
 .en-tete img {
     height: 1.25em;
 }
 
-.en-tete li {
-    display: inline;
-    padding: 13px 12px 6px 12px;
-    border-top:3px solid rgb(0, 101, 252, 0);
+.en-tete ul {
+    width: 300px;
+    display:flex;
+    margin:0px;
+}
+
+.en-tete ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .en-tete ul :hover {
     border-top: 3px solid rgb(0, 101, 252, 1);
+}
+
+.en-tete li {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 33px;
+    padding-top: 15px;
+    border-top:3px solid rgb(0, 101, 252, 0);
 }
 
 .en-tete li :hover {
@@ -109,7 +126,7 @@ a {
     margin-top:3em;
 }
 
-#filtre_geoloc i {
+#ico_geoloc {
     width: 50px;
     height: 50px;
     display:flex;
@@ -131,8 +148,8 @@ a {
     border : 1px solid #F2F2F2;
 }
 
-#button_geoloc {
-    width: 125px;
+#bouton_recherche {
+    width: auto;
     height: 50px;
     font-weight: bold;
     font-size: 1rem;
@@ -140,6 +157,11 @@ a {
     background-color: #0065FC;
     border-radius: 0px 16px 16px 0px;
     border:none;
+    padding:17px;
+}
+
+#loupe {
+    display:none;
 }
 
 #filtre_cat {
@@ -465,13 +487,54 @@ input[type="checkbox"] {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
+@media (max-width: 767.98px) {    
+    .main-container {
+        padding:5px;
+    }
 
-/* VerySmall devices (<320px) */
-@media (max-width: 319.98px) {
-    body {
-        min-width: 320px;
+    .en-tete {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #en-tete_img {
+        justify-content: center;
+        margin:33px;
+    }
+
+    .en-tete ul {
+        justify-content: space-between;
+        width: 110%;
+        padding:0px;
+        margin-left:-15px;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .en-tete ul :hover {
+        border-top:none;
+        border-bottom: 3px solid rgb(0, 101, 252, 1);
+        margin-bottom: -3px;
+        padding-bottom: 3px;
+    }
+
+    .en-tete li :hover {
+        border:none;
+    }
+
+    #loupe {
+        display: ruby;
+        color:white;
+        font-weight: bold;
+    }
+
+    #bouton_recherche {
+        border-radius: 16px 16px 16px 16px;
+        margin-left:-16px;
+        box-shadow: 0px 5px 2px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    #recherche {
+        display:none;
     }
 }
