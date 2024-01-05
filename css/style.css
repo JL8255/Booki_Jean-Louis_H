@@ -19,7 +19,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0px 30px 0px 30px;
 }
 
 .main-container {
@@ -454,14 +454,13 @@ input[type="checkbox"] {
 
 .footer-conteneur {
     background-color: var(--footer-bg-color);
-    width: 100%;
     display:flex;
     flex-direction: row;
     padding: 30px;
 }
 
 .footer-bloc {
-    width: 30em;
+    width: 33%;
     display:flex;
     flex-direction: column;
     line-height: 35px;
@@ -533,9 +532,6 @@ input[type="checkbox"] {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {    
-    .main-container {
-    }
-
     .en-tete {
         width: 100%;
         display: flex;
