@@ -548,9 +548,13 @@ input[type="checkbox"] {
 }
 
 /* Point de rupture texte contenus dans les cards pour éviter les dépassements*/
-@media (max-width: 810px) {
+@media (max-width: 870px) {
     .card-title {
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-content {
+    line-height: 21px;
     }
 }
 
