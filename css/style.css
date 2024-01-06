@@ -22,10 +22,10 @@ html {
 }
 
 body {
-    max-width: 1380px; /*1440 - (2 x 30 padding) */
+    max-width: 1360px; /*1440 - (2 x 50 padding) */
     display: flex;
     justify-content: center;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 40px 0px 40px;
     margin: 0;
 }
 
@@ -96,22 +96,18 @@ h2, h3, p {
     padding: 0;
 }
 
-.en-tete ul :hover {
-    border-top: 3px solid rgb(0, 101, 252, 1);
-}
-
 .en-tete li {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    border-top:3px solid rgb(0, 101, 252, 0);
-    border-bottom:3px solid rgb(0, 101, 252, 0);
+    border-top:3px solid rgb(0, 101, 252, 0)
 }
 
 .en-tete li :hover {
     color: rgb(0, 101, 252, 1);
-    border:none;
+    margin-top:-3px;
+    border-top:3px solid rgb(0, 101, 252, 1)
 }
 
 .en-tete ul a {
@@ -259,15 +255,16 @@ input[type="checkbox"] {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
+    /*width: 24px;
+    height: 24px; se déforme sur petits écrans 375px */
     border:1px solid #DEEBFF;
     border-radius:12px 12px 12px 12px;
     font-size: 1em;
+    padding: 4px 8.5px 4px 8.5px; /* plus stable que width: 24px et height: 24px qui "s'écrasent" losque l'écran se réduit */
 }
 
 #filtre_footer p {
-    padding-left:15px;
+    padding-left: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -560,7 +557,7 @@ input[type="checkbox"] {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {    
     body {
-        padding:0;
+        padding:0px;
     }
     
     .card-title {
@@ -585,27 +582,27 @@ input[type="checkbox"] {
         justify-content: space-between;
         width: 100%;
         text-align: center;
-        border-bottom: 3px solid #F2F2F2;
     }
 
-    .en-tete ul :hover {
-        border-top: 3px solid rgb(0, 101, 252, 0);
-        border-bottom: 3px solid rgb(0, 101, 252, 1);
-        padding-bottom: -3px;
-        margin-top: -3px;
+    .en-tete li {
+        border-bottom: 3px solid #F2F2F2;
     }
 
     .en-tete li :hover {
         border-top: 3px solid rgb(0, 101, 252, 0);
-        border-bottom: 3px solid rgb(0, 101, 252, 0);
+        border-bottom: 3px solid rgb(0, 101, 252, 1);
     }
 
-    #filtre {
-        padding: 0px 40px 0px 40px;
+    #filtre p, h2 {
+        padding-left: 20px;
+    }
+
+    #filtre_geoloc {
+        padding-left: 20px;
     }
 
     #input_geoloc {
-        width: 255px;
+        width: 250px;
     }
 
     #loupe {
@@ -626,6 +623,19 @@ input[type="checkbox"] {
         display:none;
     }
 
+    #filtre_cat {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #filtre_cat p {
+        padding-left: 10px;
+    }
+
+    #filtre_cat_list {
+        justify-content: center;
+    }
+
     #filtre_cat_list li {
         font-size: 0.9rem;
         width: 155px;
@@ -641,14 +651,20 @@ input[type="checkbox"] {
         padding-right: 10px;
     }
 
+    #filtre_footer {
+        padding-left: 20px;
+    }
+
+    #filtre_footer p {
+        padding-left: 10px;
+    }
+
     .hebergements-and-populaires section {
-        width: 100%;
         border-radius: 0;
     }
 
     .populaires {
         order:1;
-        width: 100%;
     }
 
     .populaires-title {
