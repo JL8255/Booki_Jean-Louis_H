@@ -488,7 +488,7 @@ input[type="checkbox"] {
 }
 
 .card-subtitle {
-    font-size: 15px;
+    font-size: 14px;
 }
 }
 
@@ -603,10 +603,11 @@ input[type="checkbox"] {
 
     #filtre_geoloc {
         padding-left: 20px;
+        padding-right: 20px;
     }
 
     #input_geoloc {
-        width: 250px;
+        width: min(100%,250px);
     }
 
     #loupe {
