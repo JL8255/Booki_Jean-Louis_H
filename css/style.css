@@ -637,7 +637,7 @@ input[type="checkbox"] {
 
     #filtre_cat {
         padding-left: 10px;
-        padding-right: 10px;
+        padding-right: 82px;
     }
 
     #filtre_cat p {
@@ -745,5 +745,12 @@ input[type="checkbox"] {
         width: 100%;
         padding-left: 15px;
         margin-bottom: 40px;
+    }
+}
+
+/* résolution bug d'affichage marges blanches entre 695px et 767px */
+@media (max-width: 695px) {
+    #filtre_cat {
+        padding-right: 10px;
     }
 }
