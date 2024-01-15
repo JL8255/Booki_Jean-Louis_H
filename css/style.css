@@ -343,7 +343,6 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     line-height: 25px;
-    font-size: auto;
     padding: 5px 15px 5px 15px;
     box-sizing: border-box;
 }
