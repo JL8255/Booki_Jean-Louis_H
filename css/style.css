@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    width: max(100%, 1360px); /*1440 - (2 x 40 padding) */
+    width: min(100%, 1360px); /*1440 - (2 x 40 padding) */
     display: flex;
     justify-content: center;
     margin: 0;
