@@ -716,10 +716,6 @@ input[type="checkbox"] {
         width: 100%;
     }
 
-    .activite {
-        order:3;
-    }
-
     .activite-title {
         padding-left: 5%;
     }
