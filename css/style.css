@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    max-width: 1360px; /*1440 - (2 x 40 padding) */
+    width: max(100%, 1360px); /*1440 - (2 x 40 padding) */
     display: flex;
     justify-content: center;
     margin: 0;
@@ -327,6 +327,7 @@ input[type="checkbox"] {
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-bottom: 30px;
+    border: 4px solid white;
 }
 
 .hebergement-cards img {
@@ -375,6 +376,7 @@ input[type="checkbox"] {
     height: 150px;
     display: flex;
     margin-bottom: 30px;
+    border: 4px solid white;
 }
 
 .populaires-cards img {
@@ -567,6 +569,7 @@ input[type="checkbox"] {
 
     .main-container {
         padding: 0;
+        width: 100%;
     }
     
     .card-title {
@@ -636,7 +639,7 @@ input[type="checkbox"] {
 
     #filtre_cat {
         padding-left: 10px;
-        padding-right: 82px;
+        width: 350px;
     }
 
     #filtre_cat p {
@@ -688,7 +691,7 @@ input[type="checkbox"] {
     }
 
     .populaires-cards a {
-        width: min(100%, 315px);
+        width: 100%;
     }
 
     .hebergement {
@@ -710,7 +713,7 @@ input[type="checkbox"] {
     }
 
     .hebergement-conteneur a {
-        width: min(100%, 310px);
+        width: 100%;
     }
 
     .activite {
@@ -727,7 +730,7 @@ input[type="checkbox"] {
     }
 
     .activite-conteneur a {
-        width: min(100%, 315px);
+        width: 100%;
         height: 200px;
         margin-bottom: 15px;
     }
@@ -744,12 +747,5 @@ input[type="checkbox"] {
         width: 100%;
         padding-left: 15px;
         margin-bottom: 40px;
-    }
-}
-
-/* résolution bug d'affichage marges blanches entre 695px et 767px */
-@media (max-width: 695px) {
-    #filtre_cat {
-        padding-right: 10px;
     }
 }
