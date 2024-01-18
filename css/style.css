@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    max-width: 1360px; /*1440 - (2 x 40 padding) */
+    width: max(100%, 1360px); /*1440 - (2 x 40 padding) */
     display: flex;
     justify-content: center;
     margin: 0;
@@ -569,6 +569,7 @@ input[type="checkbox"] {
 
     .main-container {
         padding: 0;
+        width: 100%;
     }
     
     .card-title {
@@ -748,10 +749,3 @@ input[type="checkbox"] {
         margin-bottom: 40px;
     }
 }
-
-/* résolution bug d'affichage marges blanches entre 695px et 767px
-@media (max-width: 695px) {
-    #filtre_cat {
-        padding-right: 382px;
-    }
-}*/
