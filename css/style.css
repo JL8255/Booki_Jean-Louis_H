@@ -488,7 +488,7 @@ input[type="checkbox"] {
 /* Large devices <1440px --> Rien à faire car body déjà borné ligne 27*/
 
 /* Point de rupture texte contenus dans les cards pour éviter les dépassements*/
-@media (max-width: 1205px) {
+@media (max-width: 1220px) {
 .card-title {
     font-size: 12px;
 }
@@ -714,10 +714,6 @@ input[type="checkbox"] {
 
     .hebergement-conteneur a {
         width: 100%;
-    }
-
-    .activite {
-        order:3;
     }
 
     .activite-title {
